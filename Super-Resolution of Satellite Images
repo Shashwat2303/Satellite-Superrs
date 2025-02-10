@@ -1,0 +1,50 @@
+# Super-Resolution of Satellite Images
+
+This repository contains the implementation of Super-Resolution of Satellite Images as part of the AI for Sustainability initiative. The project aims to enhance the resolution of low-quality satellite images using deep learning techniques such as GANs (Generative Adversarial Networks) CNNs (Convolutional Neural Networks) and Transformer-based models. This work contributes to environmental monitoring and object detection for improved decision-making in sustainability applications.
+
+## Project Overview
+The goal of this project is to generate high-resolution satellite imagery from low-resolution inputs. This can improve:
+- Detection of pollution sources
+- Analysis of urban development
+- Monitoring of deforestation and land-use changes
+- Tracking disaster-prone areas
+
+## Research References
+This project is inspired by and builds upon research from IIT Gandhinagar’s Sustainability Lab. Relevant research papers include:
+1. Space to Policy: Scalable Brick Kiln Detection and Automatic Compliance Monitoring with Geospatial Data
+2. Scalable Methods for Brick Kiln Detection and Compliance Monitoring from Satellite Imagery: A Deployment Case Study in India
+
+## Methodology
+1. Dataset Preparation
+   - We use open-source satellite imagery datasets
+   - Data augmentation techniques are applied to increase generalizability
+
+2. Model Development
+   - Implement CNN-based Super-Resolution (SRCNN VDSR)
+   - Use GAN-based models (SRGAN ESRGAN) for photorealistic results
+   - Explore Transformer-based methods for enhanced feature extraction
+
+3. Training & Evaluation
+   - Loss functions: MSE Perceptual Loss and Adversarial Loss
+   - Metrics: PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index)
+
+## Installation & Usage
+# Clone the repository
+git clone https://github.com/yourusername/satellite-superres.git
+cd satellite-superres
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Train the model
+python train.py --dataset path/to/dataset
+
+# Test the model
+python test.py --image path/to/lowres_image.jpg
+```
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request
+
+## Contact
+For any queries please contact Shashwat Pandey (IIT Madras) or refer to the IITGN Sustainability Lab website
